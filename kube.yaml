@@ -13,11 +13,14 @@ spec:
   selector:
     app: maven
 ---
-apiVersion: v1
+apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: maven-deployment
 spec:
+  selector:
+    matchLabels:
+      app: maven
   replicas: 1
   template:
     metadata:
