@@ -13,7 +13,7 @@ spec:
   selector:
     app: maven
 ---
-apiVersion: extensions/v1beta1
+apiVersion: v1
 kind: Deployment
 metadata:
   name: maven-deployment
