@@ -4,7 +4,7 @@ projectName=$1
 docker_path=$2
 appName=$3
 tag=$(date +%s)
-server_path=10.0.0.21:5000
+server_path=192.168.2.10:5000
 target_image=${projectName}:${tag}
 echo ${target_image}
 cd ${docker_path}
